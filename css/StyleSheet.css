@@ -1,0 +1,209 @@
+body{
+    color: #333;
+}
+
+
+/* CAROUSEL */
+.carousel{
+    margin-bottom: 20px;
+}
+.carousel-caption h1{
+    font-family: "Amatic SC", cursive, sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+}
+.carousel-caption p{
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+.carousel .item{
+    height: 300px;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    height: 100%;
+}
+/* CAROUSEL */
+
+
+/* ABOUT */
+.about{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.about h2{
+    font-family: "Amatic SC", cursive, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.panel-body{
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+.panel-body p{
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+}
+.col-lg-9{
+    padding: 0;
+}
+.col-lg-3{
+    display: flex;
+    justify-content: center;
+}
+/* ABOUT */
+
+
+/* ARTICLE */
+.article{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.article h2{
+    font-family: "Amatic SC", cursive, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.article .col-lg-4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.article .col-lg-4 p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h3{
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    font-weight: 600;
+}
+.img1{
+    max-width: 368px;
+}
+.col{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+footer{
+    padding: 50px;
+}
+/* ARTICLE */
+
+
+/* DONATE */
+#donate{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+#panel,#flip{
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border:solid 1px  #c3c3c3;
+}
+#flip{
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+#panel{
+    padding: 30px;
+    display: none;
+    height: 530px;
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+
+
+}
+#donate1{
+    margin-bottom: 20px;
+}
+
+input{
+    width: 200px;
+}
+/* DONATE */
+
+
+/* RESPONSIVE CSS */
+@media (min-width: 446px){
+    #panel{
+        height: 500px;
+    }
+}
+@media (min-width: 768px){
+    .carousel .item{
+        height: 500px;
+    }
+    .carousel-caption h1{
+        font-family: "Amatic SC", cursive, sans-serif;
+        font-size: 90px;
+        font-weight: 600;
+    }
+    .carousel-caption p{
+        font-family: "Josefin Sans", Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        font-variant: small-caps;
+        /* margin-bottom: 20px;
+        line-height: 1.4; */
+    }
+
+    .about h2{
+        font-family: "Amatic SC", cursive, sans-serif;
+        font-size: 80px;
+        font-weight: 700;
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .col-lg-10{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .panel-body{
+        padding: 0;
+    }
+
+    .article h2{
+        font-family: "Amatic SC", cursive, sans-serif;
+        font-size: 80px;
+        font-weight: 700;
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .article{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #panel{
+        height: 480px;
+    }
+}
+
+@media (min-width: 1200px){
+    .about .col-lg-9{
+        padding-top: 30px;
+    }
+    #panel{
+        height: 340px;
+        font-family: "Josefin Sans", Helvetica, sans-serif;
+        font-size: 16px;
+    }
+}
