@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yayasan Peduli Sesama</title>
+        <link rel="icon" type="image/png" href=”img/icon.png”/>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/StyleSheet.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
@@ -13,14 +14,31 @@
     <body>
 
         <!-- NAVBAR -->
-        <div class="navbar-wrapper">
+        <!-- <div class="navbar navbar-expand-md navbar-light ">
             <nav class="navbar fixed-top navbar-light bg-light">
                 <a class="navbar-brand" href="index.html" style="font-family: 'Josefin Sans', Helvetica, sans-serif;">
                     <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                     Yayasan Peduli Sesama
                 </a>
             </nav>
-        </div>
+        </div> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Yayasan Peduli Sesama
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Beranda <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Tentang Kami</a>
+                    <a class="nav-item nav-link" href="#">Artikel</a>
+                    <a class="nav-item nav-link" href="#">Donasi</a>
+                </div>
+            </div>
+        </nav>
         <!-- /NAVBAR -->
 
 
@@ -81,7 +99,6 @@
         <div class="container article">
             <div class="row">
                 <h2>Artikel</h2>
-
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-body">
@@ -94,7 +111,7 @@
                                 </div>
                                 <div class="col">
                                     <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus.</p>
-                                    <p><a class="btn btn-default" href="#">Lebih lanjut &raquo;</a></p>
+                                    <p><a class="btn btn-default" href="article.html">Lebih lanjut &raquo;</a></p>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +129,7 @@
                                 </div>
                                 <div class="col">
                                     <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus.</p>
-                                    <p><a class="btn btn-default" href="#">Lebih lanjut &raquo;</a></p>
+                                    <p><a class="btn btn-default" href="article.html">Lebih lanjut &raquo;</a></p>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +147,7 @@
                                 </div>
                                 <div class="col">
                                     <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus.</p>
-                                    <p><a class="btn btn-default" href="#">Lebih lanjut &raquo;</a></p>
+                                    <p><a class="btn btn-default" href="article.html">Lebih lanjut &raquo;</a></p>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +160,7 @@
 
         <!-- DONASI -->
         <div id="donate">
-            <div id="flip">mari berdonasi ↓</div>
+            <div id="flip">mari berdonasi ▼</div>
             <div id="panel">
                 <div id="donate1" class="row align-items-start">
                     <div class="col-lg-6">
