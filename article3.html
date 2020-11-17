@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manfaat Berbagi dengan Sesama di Tengah Pandemi COVID-19 | Yayasan Peduli Sesama</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/StyleSheet.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <div class="navbar navbar-default navbar-static-top" style="font-family: 'Josefin Sans', Helvetica, sans-serif;">
+            <div class="container nav">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: aquamarine; font-weight: bold;">
+                    ≡
+                </button>
+                    <a class="navbar-brand" href="index.html">
+                    <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Yayasan Peduli Bersama
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="article.html">Artikel</a></li>
+                    <li><a href="#donate">Donasi</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /NAVBAR -->
+
+
+        <!-- JSON -->
+        <div class="container json">
+            <table class="table-borderless">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /JSON -->
+
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="pull-right"><a href="#">Back to top</a></p>
+                        <p>&copy; 2020 Yayasan Peduli Sesama</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="ScriptFile.js"></script>
+        <script>
+            $.getJSON("article3.json",function(data){
+                var items=[];
+                $.each(data, function(key, val){
+                    items.push("<tr>");
+                    items.push("<td id='"+key+"'class='title'>"+val.title+"</td>");
+                    items.push("</tr>");
+                    items.push("<tr>");
+                    items.push("<td id='"+key+"'><img src='img/"
+                        +val.image+"'class='picture'></td>");
+                    items.push("</tr>");
+                    items.push("<tr>");                        
+                    items.push("<td id='"+key+"'class='content'>"+val.article+"</td>");
+                    items.push("</tr>");
+                });
+                $("<tbody/>",{"class":"mydata",html:items.join("")}).appendTo("table");
+            });
+        </script>
+    </body>
+</html>

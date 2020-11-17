@@ -2,10 +2,9 @@ body{
     color: #333;
     background-color: #7ac8c51c;
 }
-nav{
+.navbar{
     font-family: "Josefin Sans", Helvetica, sans-serif;
 }
-
 
 /* CAROUSEL */
 .carousel{
@@ -104,6 +103,22 @@ h3{
 footer{
     padding: 50px;
 }
+.table-borderless{
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    text-align: center;
+}
+.title{
+    font-size: 20px; 
+    font-weight: bold;
+}
+.picture{
+    height: 50vw;
+}
+.content{
+    font-size: 15px; 
+    text-align: justify; 
+    padding: 15px;
+}
 /* ARTICLE */
 
 
@@ -198,6 +213,18 @@ input{
     }
     #panel{
         height: 480px;
+    }
+
+    .title{
+        font-size: 45px;
+    }
+    .picture{
+        height: 30vw;
+    }
+    .content{
+        font-size: 15px; 
+        text-align: justify; 
+        padding: 15px;
     }
 }
 
