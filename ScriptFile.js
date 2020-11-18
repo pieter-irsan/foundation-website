@@ -36,6 +36,6 @@ function validasi_input(form){
         return (false);
     }
     else {
-        return (true);
+        alert("Data anda berhasil dikirim!");
     }
 }

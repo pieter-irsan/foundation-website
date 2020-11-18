@@ -170,7 +170,7 @@
                         </p>
                     </div>
                     <div class="col-lg-6">
-                        <form action="#" method="post" name="validasi_form" onsubmit="return validasi_input(this)">
+                        <form method="post" name="validasi_form" onsubmit="return validasi_input(this)">
                             <input type="text" id="name" name="name" placeholder="Nama pengirim"/><br>
                             <br>
                             <input type="email" name="email" id="email" placeholder="Email"><br>
@@ -206,21 +206,5 @@
         <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="ScriptFile.js"></script>
-        <script>
-            $.getJSON("data.json",function(data){
-                var items=[];
-                $.each(data, function(key, val){
-                    items.push("<tr>");
-                    items.push("<td id='"+key+"'>"+val.id+"</td>");
-                    items.push("<td id='"+key+"'>"+val.nama+"</td>");
-                    items.push("<td id='"+key+"'>"+val.email+"</td>");
-                    items.push("<td id='"+key+"'>"+val.telp+"</td>");
-                    items.push("<td id='"+key+"' style='text-align:center'><img src='img/"
-                        +val.foto+"' style='height:100px;'></td>");
-                    items.push("</tr>");
-                });
-                $("<tbody/>",{"class":"mydata",html:items.join("")}).appendTo("table");
-            });
-        </script>
     </body>
 </html>
